@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model ContactFormModel
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,6 +21,8 @@
     <link rel="stylesheet" href="~/assets/css/fontawesome.css">
     <link rel="stylesheet" href="~/assets/css/templatemo-finance-business.css">
     <link rel="stylesheet" href="~/assets/css/owl.css">
+    <link rel="stylesheet" href="~/assets/css/owl.theme.default.css">
+
     <link rel="shortcut icon" tpye="image/jpg" href="~/assets/images/favicon.ico" />
     <!--
 
@@ -43,7 +47,7 @@
     </div>
     <!-- ***** Preloader End ***** -->
     <!-- Header -->
-    <div class="sub-header">
+    @*<div class="sub-header">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-xs-12">
@@ -62,12 +66,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>*@
 
     <header class="">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="/Home/Index"><h2>YouLook, Inc</h2></a>
+                @*<a class="navbar-brand" href="/Home/Index"><h2>YouLook, Inc</h2></a>*@
+                <a class="navbar-brand" href="/Home/Index"><img tpye="image/jpg" src="~/assets/images/logo-youlook.png" style="width: 24%; bottom: 5px;"/></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -100,27 +105,27 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-3 footer-item">
-                    <h4>Finance Business</h4>
-                    <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
-                    <ul class="social-icons">
+                <div class="col-md footer-item">
+                    <h4>Networking Platform </h4>
+                    <p>The whole world is brought into our unique platform which makes us stand out.</p>
+                    @*<ul class="social-icons">
                         <li><a rel="nofollow" href="https://fb.com/templatemo" target="_blank"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                         <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                    </ul>
+                    </ul>*@
                 </div>
-                <div class="col-md-3 footer-item">
+                <div class="col-md footer-item">
                     <h4>Useful Links</h4>
                     <ul class="menu-list">
-                        <li><a href="#">Vivamus ut tellus mi</a></li>
-                        <li><a href="#">Nulla nec cursus elit</a></li>
-                        <li><a href="#">Vulputate sed nec</a></li>
-                        <li><a href="#">Cursus augue hasellus</a></li>
-                        <li><a href="#">Lacinia ac sapien</a></li>
+                        <li><a href="#">Social Platform</a></li>
+                        <li><a href="#">How To Stay Connected</a></li>
+                        <li><a href="#">Online Activity</a></li>
+                        <li><a href="#">Social Media Usage</a></li>
+                        <li><a href="#">Statistic</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3 footer-item">
+                @*<div class="col-md-3 footer-item">
                     <h4>Additional Pages</h4>
                     <ul class="menu-list">
                         <li><a href="#">About Us</a></li>
@@ -129,24 +134,33 @@
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                     </ul>
-                </div>
-                <div class="col-md-3 footer-item last-item">
+                </div>*@
+                <div class="col-md footer-item last-item">
                     <h4>Contact Us</h4>
                     <div class="contact-form">
-                        <form id="contact footer-contact" action="" method="post">
+                        <form id="contact footer-contact" asp-action="Sendmail" method="post">
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <fieldset>
+                                        <label asp-for="Name"></label>
                                         <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <fieldset>
+                                        <label asp-for="Subject"></label>
+                                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject Line" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <fieldset>
+                                        <label asp-for="Email"></label>
                                         <input name="email" type="text" class="form-control" id="email" pattern="[^ @@]*@@[^ @@]*" placeholder="E-Mail Address" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12">
                                     <fieldset>
+                                        <label asp-for="Message"></label>
                                         <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
                                     </fieldset>
                                 </div>
@@ -168,9 +182,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <p>
-                        Copyright &copy; 2020 Financial Business Co., Ltd.
-
-                        - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                        COPYRIGHT &copy 2021 YOULOOK, INC - ALL RIGHTS RESERVED.
                     </p>
                 </div>
             </div>
@@ -186,6 +198,7 @@
     <script src="~/assets/js/owl.js"></script>
     <script src="~/assets/js/slick.js"></script>
     <script src="~/assets/js/accordions.js"></script>
+    <script src="~/assets/js/my-script.js"></script>
 
     <script language="text/Javascript">
         cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field

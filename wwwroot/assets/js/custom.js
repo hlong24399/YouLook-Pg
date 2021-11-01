@@ -140,6 +140,5 @@ jQuery( document ).ready(function( $ ) {
           });
         });
         }
-    })
- 
+        })
 });

@@ -58,7 +58,7 @@ namespace YouLook_Official
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Admin}/{action=Index}/{id?}");
+                    pattern: "{controller=UserRoles}/{action=Index}/{id?}");
             });
         }
     }

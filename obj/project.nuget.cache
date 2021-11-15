@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lCgYxhSYER1/etoorQ/ktIm8bmUgAjEfaYfEOYtB4C/42gWIHHj4nRicuH63mCTIU3MLPrckRz6dfwMLV9kA2g==",
+  "dgSpecHash": "qdaSCnF3RvW5My8kjSMAZ2n9iVoV7R3JoY/KgHCkZWBjUEZ6BvV7VF8Szcbg8Xlfv5CMs6YZ9y3fR8t8xIWfwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hlong\\source\\repos\\YouLook-Official\\YouLook-Official.csproj",
+  "projectFilePath": "C:\\Users\\hlong\\Source\\Repos\\homepage-only\\YouLook-Official.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hlong\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\hlong\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\5.0.11\\microsoft.aspnetcore.diagnostics.entityframeworkcore.5.0.11.nupkg.sha512",

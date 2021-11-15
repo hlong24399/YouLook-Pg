@@ -24,13 +24,6 @@
     <link rel="stylesheet" href="~/assets/css/owl.theme.default.css">
 
     <link rel="shortcut icon" tpye="image/jpg" href="~/assets/images/favicon.ico" />
-    <!--
-
-    Finance Business TemplateMo
-
-    https://templatemo.com/tm-545-finance-business
-
-    -->
 </head>
 
 
@@ -87,9 +80,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/Home/About">About Us</a>
                         </li>
-                        <li class="nav-item">
+                        @*<li class="nav-item">
                             <a class="nav-link" href="/Home/Services">Our Services</a>
-                        </li>
+                        </li>*@
                         <li class="nav-item">
                             <a class="nav-link" href="/Home/Contact">Contact Us</a>
                         </li>
@@ -118,11 +111,11 @@
                 <div class="col-md footer-item">
                     <h4>Useful Links</h4>
                     <ul class="menu-list">
-                        <li><a href="#">Social Platform</a></li>
-                        <li><a href="#">How To Stay Connected</a></li>
-                        <li><a href="#">Online Activity</a></li>
-                        <li><a href="#">Social Media Usage</a></li>
-                        <li><a href="#">Statistic</a></li>
+                        <li><a href="https://www.techopedia.com/definition/23759/social-platform">Social Platform</a></li>
+                        <li><a href="https://www.searchenginejournal.com/5-ways-to-use-social-media-for-connection-during-times-of-social-distancing/358080/">How To Stay Connected</a></li>
+                        <li><a href="https://www.businessinsider.com/social-media-uses-up-a-lot-of-your-data-2015-6">Data Usage</a></li>
+                        <li><a href="https://www.linkedin.com/pulse/20140422162738-44670464-5-benefits-of-using-social-media">Benefits</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Privacy_concerns_with_social_networking_services">Network Privacy </a></li>
                     </ul>
                 </div>
                 @*<div class="col-md-3 footer-item">
@@ -142,26 +135,26 @@
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <fieldset>
-                                        <label asp-for="Name"></label>
+                                        <label asp-for="Name" hidden></label>
                                         <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <fieldset>
-                                        <label asp-for="Subject"></label>
+                                        <label asp-for="Subject" hidden></label>
                                         <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject Line" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <fieldset>
-                                        <label asp-for="Email"></label>
+                                        <label asp-for="Email" hidden></label>
                                         <input name="email" type="text" class="form-control" id="email" pattern="[^ @@]*@@[^ @@]*" placeholder="E-Mail Address" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12">
                                     <fieldset>
-                                        <label asp-for="Message"></label>
-                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                                        <label asp-for="Message" hidden></label>
+                                        <textarea name="message" rows="4" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12">

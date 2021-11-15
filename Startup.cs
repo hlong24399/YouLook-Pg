@@ -8,7 +8,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using YouLook_Official.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace YouLook_Official
@@ -25,11 +24,6 @@ namespace YouLook_Official
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<RoleContext>(
-                options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"
-                )));
-
-            services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddControllersWithViews();
         }
@@ -58,7 +52,7 @@ namespace YouLook_Official
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=UserRoles}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

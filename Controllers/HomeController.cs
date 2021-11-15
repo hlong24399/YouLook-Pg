@@ -46,11 +46,25 @@ namespace YouLook_Official.Controllers
             if (ModelState.IsValid)
             {
                 MailMessage mail = new MailMessage();
-                mail.To.Add(model.Email);
+                //mail.To.Add("hlong24399@gmail.com");
+                mail.To.Add("kellyvu@youlook.com");
+                mail.To.Add("longnguyen@youlook.com");
                 mail.From = new MailAddress("hlong24399@gmail.com");
-                mail.Subject = model.Subject;
-                mail.Body = model.Message;
-                mail.IsBodyHtml = true;
+                mail.Subject = $"New Message From YouLook Website {model.Subject}";
+                var template = String.Format(
+@"Hi, 
+This is a new message from {0}:
+
+{1}
+
+It is sent from {2}.
+
+Best Regards,
+Automated Email", model.Name, model.Message, model.Email);
+
+
+                mail.Body = template;
+                mail.IsBodyHtml = false;
                 if (model.FormFile != null)
                 {
                     

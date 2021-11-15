@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hlong\\source\\repos\\YouLook-Official\\YouLook-Official.csproj": {}
+    "C:\\Users\\hlong\\Source\\Repos\\homepage-only\\YouLook-Official.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hlong\\source\\repos\\YouLook-Official\\YouLook-Official.csproj": {
+    "C:\\Users\\hlong\\Source\\Repos\\homepage-only\\YouLook-Official.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hlong\\source\\repos\\YouLook-Official\\YouLook-Official.csproj",
+        "projectUniqueName": "C:\\Users\\hlong\\Source\\Repos\\homepage-only\\YouLook-Official.csproj",
         "projectName": "YouLook-Official",
-        "projectPath": "C:\\Users\\hlong\\source\\repos\\YouLook-Official\\YouLook-Official.csproj",
+        "projectPath": "C:\\Users\\hlong\\Source\\Repos\\homepage-only\\YouLook-Official.csproj",
         "packagesPath": "C:\\Users\\hlong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hlong\\source\\repos\\YouLook-Official\\obj\\",
+        "outputPath": "C:\\Users\\hlong\\Source\\Repos\\homepage-only\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -28,7 +28,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
         },
         "frameworks": {
           "net5.0": {
